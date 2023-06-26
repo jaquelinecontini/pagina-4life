@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+
+   <title>F4LIFE - Moradas Universitárias</title>
+</head>
+
+<body>
+
+   <header class="cabecalho">
+		<div class="div-cabecalho">
+			<a href="index.html">
+				<img src="logo/logof4life.png" alt="Logo F4LIFE" class="cabecalho-logo">
+			</a>
+		</div>
+
+		<div  class="icone-menu" onclick="abrirMenu()">
+			<img src="img/menu-icon.svg" alt="Ícone Menu">
+		</div>
+
+		<ul class="nav-menu">
+			<li><a href="#" class="menu-botao">Início</a></li>
+			<li><a href="#" class="menu-botao">Quem somos</a></li>
+			<li><a href="#" class="menu-botao">Contato</a></li>
+		</ul>
+
+		<script>
+			let menu = document.querySelector('header ul');
+			let menuIcon = document.querySelector('.nav-menu');
+			
+			function abrirMenu(){
+				menu.classList.toggle('open');
+			}
+		</script>
+
+   </header>
+
+   <main class="conteudo">
+		<section class="conteudo-saibamais">
+			<div class="saibamais-texto">
+				<h1>Encontre o seu lugar!</h1>
+				<p>F4Life é uma empresa de aluguéis de repúblicas para pessoas universitárias.</p>
+				<a href="#">Saiba mais</a>
+			</div>
+			<img src="img/house-searching.svg" alt="Imagem Procurando Casa" class="img-procurando">
+		</section>
+
+		<div class="quem-somos">
+			<section>
+				<h2>Quem Somos?</h2>
+				<p class="texto-quem-somos">F4Life é uma empresa de aluguéis de repúblicas para pessoas universitárias.
+					<br>Similar aos modelos de Quinto Andar e Loft, a empresa realiza reformas e prepara moradias para recepção de pessoas universitárias em um ambiente específico e otimizado para a vida de graduação.</p>
+			</section>
+			<img src="img/house-bookshelves.svg" alt="Imagem Estante de Livros" class="img-livros"></img>
+		</div>
+
+		<div class="conteudo-opinioes">
+			<h3>Veja a opinião dos nossos clientes</h3>
+
+			<img src="img/pessoa1.png" alt="Cliente 1" class="clientes">
+				<h4>Astrogildo</h4>
+				<p>“A F4Life prestou um serviço incrível”</p>
+			</img>
+
+			<img src="img/pessoa2.png" alt="Cliente 2" class="clientes">
+				<h4>Creuza</h4>
+				<p>“Serviço de qualidade com um preço justo”</p>
+			</img>
+
+			<img src="img/pessoa3.png" alt="Cliente 3" class="clientes">
+				<h4>Jurema</h4>
+				<p>“Já tive experiência com outras empresas, mas a F4Life, sem duvidas tem o melhor serviço.”</p>
+			</img>
+		</div>
+
+		<div class="contato">
+			<section class="entre-contato">
+				<h5>Entre em contato</h5>
+
+				<form>
+					<label for="email" class="texto-email">E-mail</label>
+					<input type="text" id="email" class="input-padrao" required>
+
+					<label for="mensagem" class="texto-mensagem">Mensagem</label>
+					<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+					
+					<input type="submit" value="Enviar" class="enviar">
+				</form>
+			</section>
+			<img src="img/contact-us.svg" alt="Imagem Contate-nos" class="img-contato">
+		</div>
+   </main>
+
+   <footer class="rodape-container">
+
+		<img src="logo/logof4life.png" alt="Logo F4LIFE" class="footer-logo">
+
+		<ul class="rodape-social">
+			<li><a href="#" class="rodape-midia"><img src="logo/akar-icons_facebook-fill.svg" alt="Ícone Facebook"></a></li>
+			<li><a href="#" class="rodape-midia"><img src="logo/brandico_linkedin-rect.svg" alt="Ícone Linkedin"></a></li>
+			<li><a href="#" class="rodape-midia"><img src="logo/ant-design_twitter-circle-filled.svg" alt="Ícone Twitter"></a></li>
+		</ul>
+
+		<p class="copyright">Todos os direitos reservados &copy; 2023 F4LIFE</p>
+
+   </footer>
+
+</body>
+</html>
